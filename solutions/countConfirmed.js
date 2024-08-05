@@ -15,6 +15,23 @@ If you receive an array which contains only one user object where the isConfirme
 */
 
 function countConfirmed(users) {
+  let confirmedUsers = 0;
+
+  for (let i = 0; i < users.length; i++) {
+    if(users[i].isConfirmed === true)
+    {
+      confirmedUsers++;
+    }
+    
+  }
+  if(confirmedUsers === 1)
+  {
+    return 1
+  }
+  else
+  {
+    return confirmedUsers;
+  }
 
 }
 
